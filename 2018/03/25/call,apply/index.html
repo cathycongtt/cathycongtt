@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="我是丛婷婷">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="####call 和 apply 1：    call 和 apply 都是为了改变某个函数运行时的 context 即上下文而存在的，换句话说，就是为了改变函数体内部 this 的指向。2：    call 和 apply二者的作用完全一样，只是接受参数的方式不太一样。1234567891011121314151617181920 &amp;lt;script&amp;gt;    function add(a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="虫子的博客">
+<meta property="og:url" content="http://yoursite.com/2018/03/25/call,apply/index.html">
 <meta property="og:site_name" content="虫子的博客">
-<meta property="og:description" content="我是丛婷婷">
+<meta property="og:description" content="####call 和 apply 1：    call 和 apply 都是为了改变某个函数运行时的 context 即上下文而存在的，换句话说，就是为了改变函数体内部 this 的指向。2：    call 和 apply二者的作用完全一样，只是接受参数的方式不太一样。1234567891011121314151617181920 &amp;lt;script&amp;gt;    function add(a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-11T16:38:35.895Z">
+<meta property="og:updated_time" content="2018-03-13T04:56:53.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="我是丛婷婷">
+<meta name="twitter:title" content="虫子的博客">
+<meta name="twitter:description" content="####call 和 apply 1：    call 和 apply 都是为了改变某个函数运行时的 context 即上下文而存在的，换句话说，就是为了改变函数体内部 this 的指向。2：    call 和 apply二者的作用完全一样，只是接受参数的方式不太一样。1234567891011121314151617181920 &amp;lt;script&amp;gt;    function add(a">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/25/call,apply/"/>
 
 
 
 
 
-  <title>about | 虫子的博客</title>
+  <title> | 虫子的博客</title>
   
 
 
@@ -240,34 +240,144 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/25/call,apply/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="从婷婷">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="虫子的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>我是丛婷婷</p>
-
+          <h1 class="post-title" itemprop="name headline"></h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-25T22:52:07+08:00">
+                2018-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>####call 和 apply</p>
+<p>1：<br>    <strong>call 和 apply </strong>都是为了改变某个函数运行时的 <strong>context </strong>即上下文而存在的，换句话说，就是为了<strong>改变函数体内部 this 的指向</strong>。<br>2：<br>    <strong>call 和 apply</strong>二者的作用完全一样，只是接受参数的方式不太一样。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> &lt;script&gt;</span><br><span class="line">    function add(a,b)&#123;  </span><br><span class="line">        return a+b;  </span><br><span class="line">    &#125;  </span><br><span class="line">    function sub(c,d)&#123;  </span><br><span class="line">        return c-d;  </span><br><span class="line">    &#125;  </span><br><span class="line">    function result()&#123;  </span><br><span class="line">        this.addValue = null;  </span><br><span class="line">        this.subValue = null;  </span><br><span class="line">        this.showResult=function()&#123;  </span><br><span class="line">            console.log(this.addValue);  </span><br><span class="line">            console.log(this.subValue);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    var r = new result();  </span><br><span class="line">    r.addValue = add.call(sub,4,2); //6,将add方法应用到sub上，即sub的指针指向add方法  </span><br><span class="line">    r.subValue = sub.call(add,4,2); //2,用add对象替换sub对象，并调用sub对象的方法  </span><br><span class="line">    r.showResult(); //在js中函数也是一个Function对象，函数名即是对象引用  </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>`</code></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/12/index/" rel="next" title="你好">
+                <i class="fa fa-chevron-left"></i> 你好
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/25/hasOwnPropery-判断对象自身身上有没有某些属性（排除原型上的）/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 

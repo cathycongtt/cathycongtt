@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="我是丛婷婷">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="##hasOwnPropery    判断对象自身上有没有某些属性，排除原型上拥有的 ###语法    obj.hasOwnPropery(‘属性名’)， //返回true/false ###应用场景    从后台获取到的数据，判断有没有某些数据 #####方法1：这种有可能遇到自身没有，却拿到原型上的    ​1234	&apos;&amp;#123;name:haha,age:18&amp;#125;&apos; ---&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="虫子的博客">
+<meta property="og:url" content="http://yoursite.com/2018/03/25/hasOwnPropery-判断对象自身身上有没有某些属性（排除原型上的）/index.html">
 <meta property="og:site_name" content="虫子的博客">
-<meta property="og:description" content="我是丛婷婷">
+<meta property="og:description" content="##hasOwnPropery    判断对象自身上有没有某些属性，排除原型上拥有的 ###语法    obj.hasOwnPropery(‘属性名’)， //返回true/false ###应用场景    从后台获取到的数据，判断有没有某些数据 #####方法1：这种有可能遇到自身没有，却拿到原型上的    ​1234	&apos;&amp;#123;name:haha,age:18&amp;#125;&apos; ---&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-11T16:38:35.895Z">
+<meta property="og:updated_time" content="2018-03-21T09:51:18.190Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="我是丛婷婷">
+<meta name="twitter:title" content="虫子的博客">
+<meta name="twitter:description" content="##hasOwnPropery    判断对象自身上有没有某些属性，排除原型上拥有的 ###语法    obj.hasOwnPropery(‘属性名’)， //返回true/false ###应用场景    从后台获取到的数据，判断有没有某些数据 #####方法1：这种有可能遇到自身没有，却拿到原型上的    ​1234	&apos;&amp;#123;name:haha,age:18&amp;#125;&apos; ---&amp;gt;">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/25/hasOwnPropery-判断对象自身身上有没有某些属性（排除原型上的）/"/>
 
 
 
 
 
-  <title>about | 虫子的博客</title>
+  <title> | 虫子的博客</title>
   
 
 
@@ -240,34 +240,146 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/25/hasOwnPropery-判断对象自身身上有没有某些属性（排除原型上的）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="从婷婷">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="虫子的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>我是丛婷婷</p>
-
+          <h1 class="post-title" itemprop="name headline"></h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-25T22:52:07+08:00">
+                2018-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>##hasOwnPropery<br>    判断对象自身上有没有某些属性，排除原型上拥有的</p>
+<p>###语法<br>    obj.hasOwnPropery(‘属性名’)， //返回true/false</p>
+<p>###应用场景<br>    从后台获取到的数据，判断有没有某些数据</p>
+<p>#####方法1：这种有可能遇到自身没有，却拿到原型上的<br>    ​<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	<span class="string">'&#123;name:haha,age:18&#125;'</span> ---&gt; &#123;<span class="attr">name</span>:haha,<span class="attr">age</span>:<span class="number">18</span>&#125;</span><br><span class="line">    <span class="keyword">var</span> json = &#123;<span class="attr">name</span>:<span class="string">'haha'</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;</span><br><span class="line">    <span class="built_in">console</span>.log(json.toString);	 <span class="comment">//自身身上没有toString方法但原型上，这时候拿到的就是原型上的而不是元素本身的</span></span><br><span class="line">​</span><br></pre></td></tr></table></figure></p>
+<p>#####方法2：拿到的只是对象自身上的<br>    ​<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	<span class="string">'&#123;name:haha,age:18&#125;'</span> ---&gt; &#123;<span class="attr">name</span>:haha,<span class="attr">age</span>:<span class="number">18</span>&#125;</span><br><span class="line">    <span class="keyword">var</span> json = &#123;<span class="attr">name</span>:<span class="string">'haha'</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;</span><br><span class="line">    <span class="built_in">console</span>.log(json.hasOwnPropery(<span class="string">'name'</span>));	 <span class="comment">//拿到的是元素自身上的属性</span></span><br><span class="line">​</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/25/call,apply/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/25/函数的闭包/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
